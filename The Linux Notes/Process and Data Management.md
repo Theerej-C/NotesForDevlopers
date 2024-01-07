@@ -1,0 +1,47 @@
+Process:
+
+- The PS command is an important one to know which will help in monitoring the processes.
+- There are three types of the extensions are there for ps command. I will use the BSD style(Berkley).
+- T for all process of terminal. The a for all process. The l for the long format. The r for the running process only. The S which sums the data of child process to parent one.
+- The m is for threads. The w for the wide output. The f for the hierarchal output. The e for the environment variables of the process.
+- The x is an important one which shows each and every process
+- To see the process in real time use the top command.
+- The load average in the 1st line of the top is load of system where 1st one is 1 minute load which is short burst of processes. But the 15 min load is dangerous.
+- The f is to select the fields in the top.
+- The kill command is for the process killing. And there are many process signals to know.
+- The default kill will send the TERM signal(15) which terminates if possible.
+- The kill can be used on process id only.
+- The -s parameter is used to use other signals. The main one is KILL or 9 which is unconditional termination.
+- The killall is an powerful tool which can be used to kill all the process using special characters.
+
+Disk Management:
+
+- The Linux takes all the media disks as virtual directories. So we should mount the storages we add as a vir dirs.
+- The empty mount command will give 4 info The name of the file, The mount location, The type of file system, The permissions.
+- The mount command is used to mount the filesystem. The syntax is *mount -t filesystemtype device directory*
+- Most usb memory sticks are vfat file systems.
+- The options are many but the important ones are -r, -w, -n (unregistered mount).
+- Use the man tab for the mount for all details.
+- The umount is for unmounting the device where we can use the device name or the directory name.
+- The df command is used for the disk management. The -h is for human readable format.
+- The du is for the disk usage of specific directories. The -c is for sum total in that dirs.
+
+Data Files:
+
+- The sort command is for the sorting data in the text files. The sort command interrupts numbers as chars. So use the -n param for the numerical one.
+- ![[Pasted image 20240107121937.png|400]]
+- The -M is for month sort which identifies the three letter months in files to sort in monthly order.
+- The -c is for the checking the sorting.
+- The -t is for seperator mention and -k is for positional argument.
+- The -r is for the descending order.
+- The grep command is for finding a specific text in the text fields.
+- We can use all kinds of regular expressions to do the grep functions.
+- The zipping utilities are several in linux.
+- The gzip and the bzip are the important one(.bz2, .gz) where the compression has the .z extension.
+- gzip for compressing files. gzcat for displaying the contents of compressed text files. gunzip for uncompressing files
+- The compression can be done to the individual files so if we want to compress folders we need to archive those folders into single file.
+- The tar is the famous utility for the archiving. It uses the functions and the options. The -c is for create tar and -x is for extract tar. The -t is for only listing the content of the tar.
+- Then the f option for the file output. The v option for verbose. Then the p is for file permission preserving.
+- Then we can use the unzip or bunzip to unzip the files.
+![[Pasted image 20240107122038.png|500]]
+![[Pasted image 20240107122110.png|400]]
