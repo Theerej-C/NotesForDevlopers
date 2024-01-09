@@ -20,4 +20,5 @@
 * ![[Pasted image 20240107123154.png]]
 * If we want to remove the file after the commit just we can use the git rm command.
 * We can use the *git mv* to move a file from one place to another which can also be used to change the name of the file.
+* The main advantage of the git is that after the rename of the file also the previous file name progress would be saved as it is just a content so no problem there.
 * 
