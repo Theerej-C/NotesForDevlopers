@@ -21,4 +21,12 @@
 * If we want to remove the file after the commit just we can use the git rm command.
 * We can use the *git mv* to move a file from one place to another which can also be used to change the name of the file.
 * The main advantage of the git is that after the rename of the file also the previous file name progress would be saved as it is just a content so no problem there.
-* 
+### .gitignore 
+* This is the file where we will try to mention the files and the folders that doesn't need to be added during the complete addition.
+* We can have .gitignore on any directory of our repo and it affects that repository and the sub directories only.
+* If you want to ignore a file that is already checked in, you must untrack the file before you add a rule to ignore it. From your terminal, untrack the file. *git rm --cached FILENAME*
+* There are some patterns to be followed in the git ignore so that it correctly matches the pattern.
+* The patterns are:
+	- A line starting with # serves as a comment. Put a backslash ("`\`") in front of the first hash for patterns that begin with a hash.
+    * An optional prefix "`!`" which negates the pattern; any matching file excluded by a previous pattern will become included again. It is not possible to re-include a file if a parent directory of that file is excluded.
+    * The slash "`/`" is used as the directory separator. If there is a separator at the end of the pattern then the pattern will only match directories, otherwise the pattern can match both files and directories.
