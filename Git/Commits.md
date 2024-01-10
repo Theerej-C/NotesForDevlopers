@@ -1,0 +1,3 @@
+*  Git compares the current state of the index to the previous snapshot and so derives a list of affected files and directories. Git creates new blobs for any file that has changed and new trees for any directory that has changed, and it reuses any blob or tree object that has not changed.
+* Commit snapshots are chained together with each new commits where each commit points to its predcessor.
+* Commit is the only way to introduce changes to the repository. 
