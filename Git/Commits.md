@@ -20,4 +20,11 @@
 * The ~ is used to go in a deeper side of the branch when it is merged like parent 1 from branch one and grandparent in branch 1 which is merged with another branch.
 * ![[Pasted image 20240110092640.png|400]]
 * This shows the symbols. The command git rev-parse is the final authority on translating any form of commit name—tag, relative, shortened, or absolute into an actual, absolute commit hash ID within the object database.
-* 
+* The *git log* is the tool to be used to manipulate the output and fetch what we want only.
+* The git log blank will give the HEAD branch commits only. So we need to use the flags and filters.
+* The *git log commit_name* will tell you the log of the commit specified using the various things like commit ID, etc.
+* We can use the range of the history to get the specific set of commits. Like *since..until*. The example is *git log master~12..master~13*.
+* This filters the commits from the masters 12th to the 13th commit and all the things in between them.
+* The flags like --pretty=short can reduce the information from the commit message then the --abbrev-commit will abbreviate the commit hash value.
+* ![[Pasted image 20240110094437.png|400]]
+* The main thing to note is the we should mention the rage from parent to the child.
