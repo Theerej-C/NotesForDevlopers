@@ -55,4 +55,9 @@
 * We can use the *git bisect replay* to undo a git bisect good command. This is an efficient way to do the rewind.
 * ![[Pasted image 20240111105752.png|300]]
 * As this show the bisect will use separate branch for traversal we should change branch after the bisect over using the *git bisect reset* command.
+* The git blame is an another command which can be used to find who edited the specific line of a file and last modified.
+* The syntax is *git blame -L (line number to start), (file name)* 
+* ![[Pasted image 20240111112330.png]]
+* We can use the *git log -Sstring* to search for commits which specifically added or deleted the given string after S. There should be no space involved in the S and the String.
+* ![[Pasted image 20240111112728.png|300]]
 * 
