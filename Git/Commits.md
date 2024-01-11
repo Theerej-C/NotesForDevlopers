@@ -28,3 +28,10 @@
 * The flags like --pretty=short can reduce the information from the commit message then the --abbrev-commit will abbreviate the commit hash value.
 * ![[Pasted image 20240110094437.png|400]]
 * The main thing to note is the we should mention the rage from parent to the child.
+* The -p flag is for the details of the patches and changes.
+* ![[Pasted image 20240111090735.png|400]]
+* The -n flag is for the number of commits we want to visit.
+* The --stat will tell the file changes and how many lines are modified. *git show commitname* is an another command to be used to see the objects in the git object store.
+### Commit graphs
+* The git uses the special graph the directed acyclic graph. The direction is towards their parents. For example A is a initial commit then from B the arrow will be towards the A.
+* 
