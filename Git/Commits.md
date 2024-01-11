@@ -40,3 +40,19 @@
 * In this branches when we use the topic..master then the commits in the master will be only printed. Like W X Y Z. Because it cannot traverse backwards.
 * As we know the range will be from higher to lower number for example 12 to 10 which means as the graphs are directed it will be started from the lower one like 10 to 12 where 12 is excluded. So in topic .. master the master is the starting point.
 * When we use the ... dots instead of 2 dots then this represents the symmetric difference between A and B or set of commits from a and b but not both.
+* ![[Pasted image 20240111104315.png]]
+### Finding commits:
+* We can locate commits that meets certain criteria using commands.
+* The first one is the git bisect. This can be used to find and locate particularly faulty commit.
+* The git bisect is an tool for the selection of good and bad commits. First we need to set the good and the bad commit.
+* The bad commit will be maximum our HEAD because we will see the defect in it. But the good commit will be in the history and we need to just check the log and find it.
+* We use the *git bisect start* to bisect starting. Then we can set the HEAD as bad part using the *git bisect bad* and if we need to specify certain branch as bad then we need to set it.
+* Then using the *git bisect good commit name* to specify the good commit.
+* After that git bisect will indicates which are the good one and the bad one in the command line.
+* ![[Pasted image 20240111105157.png]]
+* We should narrow it down to minimum amount of revisions using the continuous *git bisect good* command where the revisions will decrease. We can use the *git bisect log* to see the stored things.
+* ![[Pasted image 20240111105613.png]]
+* We can use the *git bisect replay* to undo a git bisect good command. This is an efficient way to do the rewind.
+* ![[Pasted image 20240111105752.png|300]]
+* As this show the bisect will use separate branch for traversal we should change branch after the bisect over using the *git bisect reset* command.
+* 
