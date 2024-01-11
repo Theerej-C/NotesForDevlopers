@@ -32,6 +32,11 @@
 * ![[Pasted image 20240111090735.png|400]]
 * The -n flag is for the number of commits we want to visit.
 * The --stat will tell the file changes and how many lines are modified. *git show commitname* is an another command to be used to see the objects in the git object store.
-### Commit graphs
+### Commit graphs and ranges:
 * The git uses the special graph the directed acyclic graph. The direction is towards their parents. For example A is a initial commit then from B the arrow will be towards the A.
-* 
+* The ^x is to exclude the commit and the predecessor of that commit. For example the x..y is equals to ^x y.
+* The git ranges can be tricky as the graph is Directed acyclic graph we cannot get all the commits form two branches which are merged. For example:
+* ![[Pasted image 20240111102418.png]]
+* In this branches when we use the topic..master then the commits in the master will be only printed. Like W X Y Z. Because it cannot traverse backwards.
+* As we know the range will be from higher to lower number for example 12 to 10 which means as the graphs are directed it will be started from the lower one like 10 to 12 where 12 is excluded. So in topic .. master the master is the starting point.
+* When we use the ... dots instead of 2 dots then this represents the symmetric difference between A and B or set of commits from a and b but not both.
