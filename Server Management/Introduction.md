@@ -17,4 +17,3 @@
 * The kernel file is the vmlinuz or vmlinux which is the main kernel file which will be booted after the GRUB.
 * Then the full kernel is loaded with the many modules like I/O.
 * The initrd which is Init Ram driver which helps the kernel to access the file system.
-* 
