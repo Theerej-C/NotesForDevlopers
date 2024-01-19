@@ -8,3 +8,6 @@
 * ![[Pasted image 20240119123030.png]]
 * This is the basic structure of the file where we set the IP as the static one and need to set the router as the routes.
 * IP command is an important one to check add and do something to the networking configuration and need to master this.
+* We can set static host names to the IP addresses in the /etc/hosts file by adding the name and the route.
+* ![[Pasted image 20240119124651.png|300]]
+* The dig and the tracepath is the tools to trouble shoot the networking errors in the server.
