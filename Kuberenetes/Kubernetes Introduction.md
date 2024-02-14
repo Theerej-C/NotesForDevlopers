@@ -22,4 +22,8 @@
 * So we should use a volume to mount the physical or cloud storage to the pod using the kubernetes volume.
 * The point to note is that kubernetes doesn't maintain the data so we should use the volumes.
 ## Deployment
-* The deployment is the blueprint for the pods which where we can mention the 
+* The deployment is the blueprint for the pods which where we can mention the number of instances etc, and the problem in this is the DB's cannot be replicated by the deployment as the data need to be persisted.
+* The data base has the data or the state so the concept is called statefulset.
+* This component is meant for specifically applications like the StatefullSet.
+* This will take care of replicating the DB, doing extra job like the deployment.
+* 
