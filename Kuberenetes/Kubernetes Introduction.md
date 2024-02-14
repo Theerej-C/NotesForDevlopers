@@ -21,4 +21,5 @@
 * The data storage is the main thing to note as the pods are restarted the DB data would be gone. 
 * So we should use a volume to mount the physical or cloud storage to the pod using the kubernetes volume.
 * The point to note is that kubernetes doesn't maintain the data so we should use the volumes.
-* 
+## Deployment
+* The deployment is the blueprint for the pods which where we can mention the 
