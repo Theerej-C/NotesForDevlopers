@@ -26,4 +26,3 @@
 * The data base has the data or the state so the concept is called statefulset.
 * This component is meant for specifically applications like the StatefullSet.
 * This will take care of replicating the DB, doing extra job like the deployment.
-* 
