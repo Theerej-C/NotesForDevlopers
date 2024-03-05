@@ -57,5 +57,10 @@ func main(){
 var p *int32 = new(int32)
 fmt.Println(p)
 ```
-* 
+* The pointer itself has a memory address where it stores a memory address.
+* We can refer a pointer memory address (dereference) using the same star. Like `fmt.Println(*p)`.
+* The pointer will store a deafult value in the memory location it has been pointing.
+* We can also initialise a pointer using the star like `*p=10`. Then we can use the & symbol to create a pointer from another variable like `p = &i` where the p will denote the memory address of the i and if we refer the p the value i will be returned.
+* When the pointer is used to refer a memory location copy of the pointer changes the original value changes like in slices when we change the element of an copy array then we had changed the original array also.
+* As in c and C++ we can use the pointer to refer a variable in another function and change its value. like `func hello(thing2 *[6]float64) [5]float64{}`.
 
