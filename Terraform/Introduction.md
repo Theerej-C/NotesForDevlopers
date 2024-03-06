@@ -74,4 +74,6 @@ EOF
 ## Working of Terraform:
 * Terraform is an open source tool created by HashiCorp and written in the Go programming language. The Go code compiles down into a single binary.
 * under the hood, the terraform binary makes API calls on your behalf to one or more providers, such as AWS, Azure, Google Cloud, Digital Ocean, Open Stack, and more.
-* We need to configure a 
+* We need to configure terraform configuration so that it can make calls to the Cloud providers on behalf of us.
+* You can define your entire infrastructure—servers, databases, load balance's, network topology, and so on—in Terraform configuration files
+* You then run certain Terraform commands, such as terraform apply, to deploy that infrastructure.
