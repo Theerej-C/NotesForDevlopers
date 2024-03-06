@@ -23,3 +23,55 @@ sudo service apache2 start
 ```
 * The great thing about ad hoc scripts is that you can use popular, general- purpose programming languages, and you can write the code however you want. 
 * But the common language and the Ad hoc scripts are the important.
+### Configuration Management tools:
+* There are many configuration management tools like ansible, puppet, etc. Which are the one which install and manages the existing servers. 
+* For example, here is an Ansible role called web-server.yml:
+```
+- name: Update the apt-get cache
+apt:
+update_cache: yes
+- name: Install PHP
+apt:
+name: php
+- name: Install Apache
+apt:
+name: apache2
+- name: Copy the code from the repository
+git: repo=https://github.com/brikis98/php-app.git
+dest=/var/www/html/app
+- name: Start Apache
+service: name=apache2 state=started enabled=yes
+```
+* There are many advantages in the management tools like this:
+	* Coding conventions: It is consistent, predictable structure, etc.
+	* Idempotent: Code that works correctly no matter how many times you run it is called idempotent code.
+	* Distribution: Ansible and other configuration management tools are designed specifically for managing large numbers of remote servers,
+### Server Templating Tools:
+* Instead of launching a bunch of servers and configuring them by running the same code on each one, the idea behind server templating tools is to create an image of a server that captures a fully self-contained “snapshot” of the operating system (OS), the software, the files, and all other relevant details.
+* To working with the Server templating tools there are two methods:
+	* Containers
+	* Virtual machines
+### Orchestration Tools:
+* The orchestration tool is to manage and handle the containers from the server management tools. There are many use cases of the orchestration tools.
+* Handling these tasks is the realm of orchestration tools such as Kubernetes, Marathon/Mesos, Amazon Elastic Container Service (Amazon ECS), Docker Swarm, and Nomad. For example, Kubernetes allows you to define how to manage your Docker containers as code.
+### Provisioning Tools:
+* Provisioning tools such as Terraform, Cloud Formation, Open Stack Heat, and Pulumi are responsible for creating the servers themselves.
+* For Example:
+```
+resource "aws_instance" "app" {
+instance_type
+= "t2.micro"
+availability_zone = "us-east-2a"
+ami
+= "ami-0fb653ca2d3203ac1"
+user_data = <<-EOF
+#!/bin/bash
+sudo service apache2 start
+EOF
+}
+```
+* This creates an Apache server in the AWS cluster.
+## Working of Terraform:
+* Terraform is an open source tool created by HashiCorp and written in the Go programming language. The Go code compiles down into a single binary.
+* under the hood, the terraform binary makes API calls on your behalf to one or more providers, such as AWS, Azure, Google Cloud, Digital Ocean, Open Stack, and more.
+* We need to configure a 
