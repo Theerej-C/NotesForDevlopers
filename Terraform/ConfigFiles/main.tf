@@ -10,6 +10,7 @@ provider "aws" {
     s3          = "http://localhost:4566"
     ec2         = "http://localhost:4566"
     autoscaling = "http://localhost:4566"
+    elb         = "http://localhost:4566"
   }
 
 }
@@ -48,49 +49,32 @@ output "public_ip" {
   value       = aws_instance.example.public_ip
   description = "The public IP address of the web server"
 }
-
-data "aws_ami" "example" {
-  most_recent = true
-  owners      = ["amazon"]
-
+data "aws_subnets" "default" {
   filter {
-    name   = "name"
-    values = ["amzn2-ami-hvm-*-x86_64-gp2"]
-  }
-
-  filter {
-    name   = "virtualization-type"
-    values = ["hvm"]
+    name   = "vpc-id"
+    values = [data.aws_vpc.default.id]
   }
 }
-
-output "ami_id" {
-  description = "The ID of the most recent Amazon Linux 2 AMI"
-  value       = data.aws_ami.example.id
+data "aws_vpc" "default" {
+  default = true
 }
-
-resource "aws_launch_configuration" "ex" {
-  image_id        = "ami-04681a1dbd79675a5"
-  instance_type   = "t2.micro"
-  security_groups = [aws_security_group.instance.id]
-  user_data       = <<-EOF
-            #!/bin/bash
-            echo "Hello, World" > index.xhtml
-            nohup busybox httpd -f -p 8080 &
-            EOF
-  lifecycle {
-    create_before_destroy = true
-  }
+resource "aws_lb" "example" {
+  name               = "terraform-asg-example"
+  load_balancer_type = "application"
+  subnets            = data.aws_subnets.default.ids
 }
-resource "aws_autoscaling_group" "name1" {
-  launch_configuration = aws_launch_configuration.ex.name
-  min_size             = 2
-  max_size             = 10
-
-  tag {
-    key                 = "Name"
-    value               = "terraform-example"
-    propagate_at_launch = true
+resource "aws_lb_listener" "http" {
+  load_balancer_arn = aws_lb.example.arn
+  port              = 80
+  protocol          = "HTTP"
+  # By default, return a simple 404 page
+  default_action {
+    type = "fixed-response"
+    fixed_response {
+      content_type = "text/plain"
+      message_body = "404: page not found"
+      status_code  = 404
+    }
   }
 }
 
