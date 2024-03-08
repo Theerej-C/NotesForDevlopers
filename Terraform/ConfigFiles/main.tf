@@ -12,7 +12,6 @@ provider "aws" {
     autoscaling = "http://localhost:4566"
     elb         = "http://localhost:4566"
   }
-
 }
 variable "server_port" {
   description = "The port the server will use for HTTP requests"
