@@ -48,32 +48,32 @@ output "public_ip" {
   value       = aws_instance.example.public_ip
   description = "The public IP address of the web server"
 }
-data "aws_subnets" "default" {
-  filter {
-    name   = "vpc-id"
-    values = [data.aws_vpc.default.id]
-  }
-}
-data "aws_vpc" "default" {
-  default = true
-}
-resource "aws_lb" "example" {
-  name               = "terraform-asg-example"
-  load_balancer_type = "application"
-  subnets            = data.aws_subnets.default.ids
-}
-resource "aws_lb_listener" "http" {
-  load_balancer_arn = aws_lb.example.arn
-  port              = 80
-  protocol          = "HTTP"
-  # By default, return a simple 404 page
-  default_action {
-    type = "fixed-response"
-    fixed_response {
-      content_type = "text/plain"
-      message_body = "404: page not found"
-      status_code  = 404
-    }
-  }
-}
+# data "aws_subnets" "default" {
+#   filter {
+#     name   = "vpc-id"
+#     values = [data.aws_vpc.default.id]
+#   }
+# }
+# data "aws_vpc" "default" {
+#   default = true
+# }
+# resource "aws_lb" "example" {
+#   name               = "terraform-asg-example"
+#   load_balancer_type = "application"
+#   subnets            = data.aws_subnets.default.ids
+# }
+# resource "aws_lb_listener" "http" {
+#   load_balancer_arn = aws_lb.example.arn
+#   port              = 80
+#   protocol          = "HTTP"
+#   # By default, return a simple 404 page
+#   default_action {
+#     type = "fixed-response"
+#     fixed_response {
+#       content_type = "text/plain"
+#       message_body = "404: page not found"
+#       status_code  = 404
+#     }
+#   }
+# }
 
