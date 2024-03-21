@@ -76,4 +76,8 @@ output "public_ip" {
 #     }
 #   }
 # }
+resource "aws_instance" "ex11"{
+  ami                         = "ami-0fb653ca2d3203ac1"
+  instance_type = terraform.workspace == "default" ? "t2.medium":"t2.micro"
+}
 
