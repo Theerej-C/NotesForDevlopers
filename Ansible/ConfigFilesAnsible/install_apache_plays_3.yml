@@ -1,0 +1,20 @@
+---
+- hosts: all
+  become: true
+  tasks:
+    - name: add apache2 and php support
+      apt:
+        name:
+          - apache2 
+          - libapache2-mod-php
+        state: latest
+        update_cache: yes
+      when: ansible_distribution in ["Ubuntu", "Debian"]
+    - name: install apache2 and php packages centos
+      dnf:
+        name: 
+          - httpd
+          - php
+        state: latest
+        update_cache: yes
+      when: ansible_distribution == "CentOS"    
