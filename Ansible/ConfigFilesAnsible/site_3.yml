@@ -30,8 +30,8 @@
 - hosts: db_server
   become: true
   tasks:
-    - name: install server on CentOS
+    - name: install mariadb server on CentOS
       yum:
-        name: httpd
+        name: mariadb-server
         state: latest
       when: ansible_distribution == "CentOS"  
