@@ -2,19 +2,36 @@
 - hosts: all
   become: true
   tasks:
-    - name: add apache2 and php support
+    - name: install updates (centos)
+      yum:
+        update_only: yes
+        update_cache: yes
+      when: ansible_distribution == "CentOS"
+    - name: install updates (Ubuntu)
+      apt:
+        update_cache: yes
+      when: ansible_distribution == "Ubuntu"
+
+
+
+- hosts: web_servers
+  become: true
+  tasks:
+    - name: add apache2 and php support for web servers
       apt:
         name:
           - apache2 
           - libapache2-mod-php
         state: latest
-        update_cache: yes
       when: ansible_distribution in ["Ubuntu", "Debian"]
-    - name: install apache2 and php packages centos
-      dnf:
-        name: 
-          - httpd
-          - php
+
+
+
+- hosts: db_server
+  become: true
+  tasks:
+    - name: install server on CentOS
+      yum:
+        name: httpd
         state: latest
-        update_cache: yes
-      when: ansible_distribution == "CentOS"    
+      when: ansible_distribution == "CentOS"  
