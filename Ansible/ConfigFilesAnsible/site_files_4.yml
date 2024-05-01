@@ -28,6 +28,15 @@
         state: latest
       when: ansible_distribution in ["Ubuntu", "Debian"]
 
+    - name: Add a file to the web server
+      tags: apache,httpd,files,apache2
+      copy:
+        src: default_file.html
+        dest: /var/www/html/index.html
+        owner: root
+        group: root
+        mode: 0644
+
 
 
 - hosts: db_server
