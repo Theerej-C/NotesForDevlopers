@@ -1,0 +1,53 @@
+- name: add apache2 and php support for web servers
+  tags: apache,apache2,ubuntu
+  apt:
+    name:
+      - apache2 
+      - libapache2-mod-php
+    state: latest
+  when: ansible_distribution in ["Ubuntu", "Debian"]
+- name: add apache2 support for centos
+  tags: centos,httpd,apache
+  yum: 
+    name: httpd
+    state: latest
+  when: ansible_distribution == "CentOS"
+
+- name: start apache server httpd
+  tags: apache,centos
+  service:
+    name: httpd
+    state: started
+    enabled: yes
+  when: ansible_distribution == "CentOS"
+- name: Allow incoming connections on port 80
+  firewalld:
+    service: http
+    permanent: yes
+    state: enabled
+  when: ansible_distribution == "CentOS"
+
+- name: Change the file for httpd
+  tags: file,httpd,apache
+  lineinfile:
+    path: /etc/httpd/conf/httpd.conf
+    regexp: '^ServerAdmin'
+    line: ServerAdmin somebody@somebody.com
+  when: ansible_distribution == "CentOS"
+  register: var_name
+  
+- name: Restart the httpd service when change in file
+  tags: httpd,centos
+  service:
+    name: httpd
+    state: restarted
+  when: var_name.changed
+
+- name: Add a file to the web server
+  tags: apache,httpd,files,apache2
+  copy:
+    src: default_file.html
+    dest: /var/www/html/index.html
+    owner: root
+    group: root
+    mode: 0644 

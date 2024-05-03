@@ -1,0 +1,5 @@
+- name: add ssh key for user tyson
+  tags: always
+  authorized_key:
+    user: tyson
+    key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDfOrGks6x3Zpl1Yv7Y25ct3PAy4Ig1Fy9b9kwlYtzlF ansible"
