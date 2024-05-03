@@ -47,6 +47,7 @@
         service: http
         permanent: yes
         state: enabled
+      when: ansible_distribution == "CentOS"
 
     - name: Change the file for httpd
       tags: file,httpd,apache
