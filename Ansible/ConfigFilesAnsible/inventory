@@ -1,5 +1,6 @@
 [web_servers]
 ubu@192.168.56.106 apache_package=apache2 php_package=libapache2-mod-php
+cent@192.168.56.107
 [db_server]
 cent@192.168.56.107
 [workstations]
