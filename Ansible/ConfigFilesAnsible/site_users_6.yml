@@ -1,0 +1,63 @@
+---
+- hosts: all
+  become: true
+  tasks:
+    - name: install updates (centos)
+      tags: always
+      yum:
+        update_only: yes
+        update_cache: yes
+      when: ansible_distribution == "CentOS"
+    - name: install updates (Ubuntu)
+      tags: always
+      apt:
+        update_cache: yes
+      when: ansible_distribution == "Ubuntu"
+
+
+- hosts: all
+  become: true
+  tasks:
+    - name: add an user named tyson to every machine 
+      tags: always
+      user:
+        name: tyson
+        group: root
+    - name: add ssh key for user tyson
+      tags: always
+      authorized_key:
+        user: tyson
+        key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDfOrGks6x3Zpl1Yv7Y25ct3PAy4Ig1Fy9b9kwlYtzlF ansible"
+    - name: add sudoers file to the tyson
+      tags: always
+      copy:
+        src: sudoer_tyson
+        dest: /etc/sudoers.d/tyson
+        owner: root
+        group: root
+        mode: 0440
+
+
+- hosts: web_servers
+  become: true
+  tasks:
+    - name: add apache2 and php support for web servers
+      tags: apache,apache2,ubuntu
+      apt:
+        name:
+          - apache2 
+          - libapache2-mod-php
+        state: latest
+      when: ansible_distribution in ["Ubuntu", "Debian"]
+
+
+
+- hosts: db_server
+  become: true
+  tasks:
+    - name: install mariadb server on CentOS
+      tags: db,mariadb,centos
+      yum:
+        name: mariadb-server
+        state: latest
+      when: ansible_distribution == "CentOS"  
