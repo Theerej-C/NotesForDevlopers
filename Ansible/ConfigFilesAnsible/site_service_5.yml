@@ -42,6 +42,11 @@
         state: started
         enabled: yes
       when: ansible_distribution == "CentOS"
+    - name: Allow incoming connections on port 80
+      firewalld:
+        service: http
+        permanent: yes
+        state: enabled
 
     - name: Change the file for httpd
       tags: file,httpd,apache

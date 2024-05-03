@@ -36,28 +36,3 @@
         owner: root
         group: root
         mode: 0440
-
-
-- hosts: web_servers
-  become: true
-  tasks:
-    - name: add apache2 and php support for web servers
-      tags: apache,apache2,ubuntu
-      apt:
-        name:
-          - apache2 
-          - libapache2-mod-php
-        state: latest
-      when: ansible_distribution in ["Ubuntu", "Debian"]
-
-
-
-- hosts: db_server
-  become: true
-  tasks:
-    - name: install mariadb server on CentOS
-      tags: db,mariadb,centos
-      yum:
-        name: mariadb-server
-        state: latest
-      when: ansible_distribution == "CentOS"  
