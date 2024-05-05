@@ -1,3 +1,5 @@
 apache_package: httpd 
 apache_service: httpd 
 apache_php_support: php 
+ssh_users: "cent tyson"
+ssh_template_file: sshd_config_centos.j2

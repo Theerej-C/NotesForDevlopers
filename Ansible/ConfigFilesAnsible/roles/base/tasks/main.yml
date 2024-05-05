@@ -3,3 +3,13 @@
   authorized_key:
     user: tyson
     key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDfOrGks6x3Zpl1Yv7Y25ct3PAy4Ig1Fy9b9kwlYtzlF ansible"
+
+- name: templating the ssh files
+  tags: ssh
+  template:
+    src: "{{ ssh_template_file }}"
+    dest: /etc/ssh/sshd_config
+    owner: root 
+    group: root 
+    mode: 0644
+  notify: restart_sshd
