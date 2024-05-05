@@ -2,21 +2,21 @@
   tags: apache,apache2,ubuntu
   apt:
     name:
-      - {{ apache_package }} 
-      - {{ apache_php_support }}
+      - "{{ apache_package }}" 
+      - "{{ apache_php_support }}"
     state: latest
   when: ansible_distribution in ["Ubuntu", "Debian"]
 - name: add apache2 support for centos
   tags: centos,httpd,apache
   yum: 
-    name: {{ apache_package }}
+    name: "{{ apache_package }}"
     state: latest
   when: ansible_distribution == "CentOS"
 
 - name: start apache server httpd
   tags: apache,centos
   service:
-    name: {{ apache_service }}
+    name: "{{ apache_service }}"
     state: started
     enabled: yes
   when: ansible_distribution == "CentOS"
@@ -32,16 +32,9 @@
   lineinfile:
     path: /etc/httpd/conf/httpd.conf
     regexp: '^ServerAdmin'
-    line: ServerAdmin somebody@somebody.com
+    line: ServerAdmin somebody@somebody.net
   when: ansible_distribution == "CentOS"
-  register: var_name
-  
-- name: Restart the httpd service when change in file
-  tags: httpd,centos
-  service:
-    name: {{ apache_service }}
-    state: restarted
-  when: var_name.changed
+  notify: apache_restart
 
 - name: Add a file to the web server
   tags: apache,httpd,files,apache2
