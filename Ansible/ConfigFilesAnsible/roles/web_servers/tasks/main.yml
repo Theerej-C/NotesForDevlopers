@@ -2,21 +2,21 @@
   tags: apache,apache2,ubuntu
   apt:
     name:
-      - apache2 
-      - libapache2-mod-php
+      - {{ apache_package }} 
+      - {{ apache_php_support }}
     state: latest
   when: ansible_distribution in ["Ubuntu", "Debian"]
 - name: add apache2 support for centos
   tags: centos,httpd,apache
   yum: 
-    name: httpd
+    name: {{ apache_package }}
     state: latest
   when: ansible_distribution == "CentOS"
 
 - name: start apache server httpd
   tags: apache,centos
   service:
-    name: httpd
+    name: {{ apache_service }}
     state: started
     enabled: yes
   when: ansible_distribution == "CentOS"
@@ -39,7 +39,7 @@
 - name: Restart the httpd service when change in file
   tags: httpd,centos
   service:
-    name: httpd
+    name: {{ apache_service }}
     state: restarted
   when: var_name.changed
 
