@@ -37,4 +37,4 @@
 ## Selling:
 - Sell the sizzle not the steak. Which means don't sell the product as a product just sell it in a manner how it solves the problem. The smell of the steak is the selling point where the explanation of the taste of steak is waste of time. 
 - Just pick the people who are the potential one which increase our business like apple would chose just 3500 people who are the important one who talks about the product.
-- 
+- Then understand the customer where the customer management is the key part. 
