@@ -40,3 +40,10 @@
 - Then understand the customer where the customer management is the key part. First listen and research in the customer side. Just listen with the customer.
 - Analyze do they need you, then understand the person in a way that do you like them. If everything goes well the deal will happen eventually.
 - Just think in a long term manner not in a small mindset just see the long term benefits of the customer. Make contact with the customer like send them something, send free services. Be relentless and approach them constantly.
+- Just build relationship with the people where they should think that you care about them.
+
+## Market:
+- Marketing is about really experimenting and connecting with the people which is like branding. The 50 percentage of the marketing cost will wasted but we need to have a long time goal.
+- First thing is to understand who is your customer then only we can have a lead in the business. 
+- The next thing is the stair case philosophy which means a stair case it is like be a step by step process. And also it is like do what ever there to market your thing like doing some shitty and costly purchases by your company so that the newspaper will cover your story.
+- 
