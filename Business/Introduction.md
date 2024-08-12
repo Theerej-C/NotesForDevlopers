@@ -55,3 +55,13 @@
 - The next thing is journalist are lazy so we should give everything just give them what they wanted. The photos, sentences, etc we need to send it to the press so that it is easy for them to do their work.
 - If you have huge fund for marketing then there is no problem but of you are starting don't go for large PR but research about the journalist who give you a lead.
 - Then learn to be disciplined because the image is very important that means don't try to fool the press. 
+
+## Investor:
+- If we want to get a investor in a wrong way then we will have a new boss and it will disaster. If we want a early investment then know the person who you are getting the money.
+- But the initial investment investor will always interfere in the process of yourself where he wants to involve in the business so that they can guarantee their money is worth it.
+- The first person you should consider is family and friends. Because they know you and your effort. But tell them the truth that they can loss money be transparent. Just get the recommendation from a friend or any.
+- Then the next guy is the person who you wants to work with you. This guy will work with you because he also have the same spirit.
+- Then the third is the angel investor who is the investor who has the money who you want as an investor. But don't ask for money but just ask help. So that they will respect you. You need to set the mindset of the investor that if they don't invest they are missing something.
+- Then the fourth type is VC (Venture Capitalist) where there are some points. First know how they make the money. Then see who they invested before the business which is like your one because there is huge chance for you. Then try to connected to the other company which got investment of the VC you want.
+- Then the fifth method is that funds from brand partners or customers where we can get the money for the expansions and like that.
+- But the main point is just ask do you want money?. Just try at your fullest to go without the funds. First start with the services. Where the crowd funding is also a option.
