@@ -46,4 +46,12 @@
 - Marketing is about really experimenting and connecting with the people which is like branding. The 50 percentage of the marketing cost will wasted but we need to have a long time goal.
 - First thing is to understand who is your customer then only we can have a lead in the business. 
 - The next thing is the stair case philosophy which means a stair case it is like be a step by step process. And also it is like do what ever there to market your thing like doing some shitty and costly purchases by your company so that the newspaper will cover your story.
-- 
+- Marketing is not promoting by ourself just reach out to the marketing expert or any partner or any organization. The sales and the marketing are the two combined things.
+- Then the third thing is the system like email, social media, PR, branding, events. But we need to have a good system which is consistent and prepare for the systematic approach.
+- Marketing should be fun guys that means if you don't want to go inside a camera then no issues write blogs. You should be comfortable in the marketing.
+
+## PR:
+- The PR is like targeted thing where we need to targeting on specific thing. You shouldn't consider your ego like you only be there and not here. We should reach out to every extreme.
+- The next thing is journalist are lazy so we should give everything just give them what they wanted. The photos, sentences, etc we need to send it to the press so that it is easy for them to do their work.
+- If you have huge fund for marketing then there is no problem but of you are starting don't go for large PR but research about the journalist who give you a lead.
+- Then learn to be disciplined because the image is very important that means don't try to fool the press. 
