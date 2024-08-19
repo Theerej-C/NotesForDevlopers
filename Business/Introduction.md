@@ -83,4 +83,7 @@
 - Then then next thing is learn to say no where we have a bad relationship. Or the brand is the problem then there should be no.
 
 ## Hiring:
+- If our business has a purpose and the people who you hire has the same purpose then there is no need for management.
+- Just check the social media or history where we need to find the purpose of the employee so that we can have a better things.
+- Then it is better to give the equity to the employee. When we give the equity then they will believe the company so that there is increase in the retention of employee.
 - 
