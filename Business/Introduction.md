@@ -65,3 +65,8 @@
 - Then the fourth type is VC (Venture Capitalist) where there are some points. First know how they make the money. Then see who they invested before the business which is like your one because there is huge chance for you. Then try to connected to the other company which got investment of the VC you want.
 - Then the fifth method is that funds from brand partners or customers where we can get the money for the expansions and like that.
 - But the main point is just ask do you want money?. Just try at your fullest to go without the funds. First start with the services. Where the crowd funding is also a option.
+
+## Sponsorships:
+- Understand why sponsorship happens that is the first point. The first point is value returns which is what is returned to them when they sponsor you.
+- The second thing is the emotional sale where we emotionally connect with the sponsor.
+- 
