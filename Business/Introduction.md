@@ -68,5 +68,8 @@
 
 ## Sponsorships:
 - Understand why sponsorship happens that is the first point. The first point is value returns which is what is returned to them when they sponsor you.
-- The second thing is the emotional sale where we emotionally connect with the sponsor.
+- The second thing is the emotional sale where we emotionally connect with the sponsor. Understand the brand that is the main key where we need to understand the business.
+- Understanding the brand value is also the important thing. We need to invest time where the brand value is the important part.
+- Research about the people in the brand who are the controlling guys so that you can have a good relationship.
+- We need to work with the people who work with the brand like agents so that we can have a peer pressure in the brand.
 - 
