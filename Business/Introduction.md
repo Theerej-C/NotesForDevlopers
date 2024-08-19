@@ -72,4 +72,15 @@
 - Understanding the brand value is also the important thing. We need to invest time where the brand value is the important part.
 - Research about the people in the brand who are the controlling guys so that you can have a good relationship.
 - We need to work with the people who work with the brand like agents so that we can have a peer pressure in the brand.
+
+## Brand:
+- First thing first the value of the brand is the important thing. What do we care about? What are the non negotiable? Understanding the personality of ourself. 
+- We need to scale the image of ourself where the other person should be eager to invest in us.
+- We need to take the personal brand very seriously. We need to have a personal value where the brand creation starts from here.
+- We can use the reference of other brands so that we can grow ourself and create our brand. Like Nike brand theirs using the Michael Jordan.
+- Then the next thing is leadership brand where there is a great leader like Steve jobs. The leading kinds of the brand is good thing to have.
+- There are many risks are also there like when we use the reference model and if the actor or celebrity do something wrong it also affect us. Then in leadership model if the leader left it will make us weak.
+- Then then next thing is learn to say no where we have a bad relationship. Or the brand is the problem then there should be no.
+
+## Hiring:
 - 
