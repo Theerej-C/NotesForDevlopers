@@ -89,4 +89,7 @@
 - We need to grow a business using growing the people and the culture. When we change the value of the business the result is the employee leaving the company.
 - We need to invent continuously and we need to continuously integrate or else we will be outdated. 
 - We need to allow or force the people and us to be a specialist not a generalized manner. And we need to have a system and system should be with the specialist.
-- 
+
+## Firing:
+- We need to learn to fire people that means it is not good but it can be necessary. Because someone can be liable to the company so we need to fire them after we give them some chance.
+- If the rating is 1 and 2 we need to get rid of them. But we need to appreciate the 9 and 10.
