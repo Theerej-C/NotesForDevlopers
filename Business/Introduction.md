@@ -94,4 +94,8 @@
 - We need to learn to fire people that means it is not good but it can be necessary. Because someone can be liable to the company so we need to fire them after we give them some chance.
 - If the rating is 1 and 2 we need to get rid of them. But we need to appreciate the 9 and 10. We also need to move the 7 and 8 so that they reach the 9 and 10
 - When we allow the 7 and 8 then the 9 and 10 will leave. So we need to device the plan like we need to move them to 9 and 10 or else we need to fire them.
+- We also need to build the employee relationship by getting their other jobs if the job you give which is not helpful.
+
+## Global:
+- We need to go global when their is a chance because if we miss it will affect us. First thing first we need to research about the market(Global) where we are going to open. 
 - 
