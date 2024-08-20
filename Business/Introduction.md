@@ -86,4 +86,7 @@
 - If our business has a purpose and the people who you hire has the same purpose then there is no need for management.
 - Just check the social media or history where we need to find the purpose of the employee so that we can have a better things.
 - Then it is better to give the equity to the employee. When we give the equity then they will believe the company so that there is increase in the retention of employee.
-- We need to grow a business using growing the people and the culture. When we change the value of the business the result is the employee leaving the 
+- We need to grow a business using growing the people and the culture. When we change the value of the business the result is the employee leaving the company.
+- We need to invent continuously and we need to continuously integrate or else we will be outdated. 
+- We need to allow or force the people and us to be a specialist not a generalized manner. And we need to have a system and system should be with the specialist.
+- 
