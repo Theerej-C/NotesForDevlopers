@@ -98,4 +98,14 @@
 
 ## Global:
 - We need to go global when their is a chance because if we miss it will affect us. First thing first we need to research about the market(Global) where we are going to open. 
+- Or else if we need not to involve in that market so we can do the franchising where we can build a partnership with others. 
+- Then we need to think about the time like if business can survive in long term in other markets.
+
+## Mentor:
+- It is not the mentor it is just the one who can answer the questions we have and in advanced he need to answer the question where we don't know how to ask.
+- First thing we need to research what matters to that person where we can leverage that info so that we can build a relationship.
+- Then we need to define what we mean when we ask them for the mentorship like what we are going to do.
+- We need not to see a mentor we need to see the advisor where we can have them in the advisory commission.
+- The referrals are the important thing where he knows the person who you want to be the mentor of yourself. 
+- Then final way is like give them value for them for their mentorship in return. This will increase the chances to get a mentor.
 - 
