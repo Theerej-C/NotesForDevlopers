@@ -1,0 +1,10 @@
+- There are many types of proofs in the dimension of mathematics and science.
+	- Proof by Construction:
+		- Many theorem tells a object exist so when we can prove the construction of object we can prove the existence.
+		- Many problems in the graph theory are proved by this proof method.
+	- Proof by contradiction:
+		- Here we say that theorem is false and try to prove this statement is false.
+	- Proof by Induction:
+		- It is an advanced method to show that every element in a particular infinite set have a special property.
+		- In induction proof the assumption is called as induction hypothesis.
+		- 
