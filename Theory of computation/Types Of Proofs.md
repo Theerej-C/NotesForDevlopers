@@ -7,4 +7,3 @@
 	- Proof by Induction:
 		- It is an advanced method to show that every element in a particular infinite set have a special property.
 		- In induction proof the assumption is called as induction hypothesis.
-		- 
