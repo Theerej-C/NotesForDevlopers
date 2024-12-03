@@ -1,0 +1,1 @@
+- Normally legacy systems will have a single server application where the server is just single server where whole traffic is going.
