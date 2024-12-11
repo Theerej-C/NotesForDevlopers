@@ -31,3 +31,15 @@
 - Traffic redirection is one of the perks where we can redirect the traffic as we wanted to any centers. Data Synchronization is another advantage where users from different regions can sync their database or cache.
 - A message queue is a durable component stored in a memory that supports asynchronous communication. The architecture is so simple where there will be a producer and a consumer where producer will produce a message and consumer will consume it.
 - The producer can sent the message to the queue when consumer is not available also and consumer can use the message when producer is not available also. This is a biggest advantage.
+### Logging metrics, automation:
+- The logging is like taking all the errors which is appearing in your application and storing that for future use. Then the metrics is collecting different types of metrics which will helps the owner in different manner like information about the traffic can be a useful information.
+- And also when system gets bigger we can incorporate automation to do task quickly like continuous integration and continuous deployment. 
+## Database Scaling:
+- There are two broad approaches for database scalling:
+	- Vertical Scaling 
+	- Horizontal Scaling 
+- In vertical scaling is kind of adding up where we will increase the power by adding more computing, DB, etc. There are many drawbacks also like single point of failure, overall cost will go high.
+- Horizontal scaling also known as sharding is addition of more servers with the existing one. This will separate the large database into smaller more easily managed parts called shards. Each shard is same schema but the data are unique.
+- When we try to access the database the step is like first the hash function will taken in the user id then the hash function will spit out a integer which will specify the number of the shard.
+- The important thing to note is the sharding key where here it is user id. We need to chose apt one for the DB. We need to chose the key which evenly distribute the data.
+- But there will be problems arise when sharding is involved like resharding data due to no space in a shard, celebrity problem when many data intense things are in same shard, Then Join and de-normalization where the join operation is harder when database are in different shards.
